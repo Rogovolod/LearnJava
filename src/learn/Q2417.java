@@ -14,14 +14,14 @@ JavaMentor задача 2.4.17
  для тех кто не желает учить новые методы
  и хочет плодить много лишнего кода =)
  Работает МЕДЛЕНЕЕ способа со StringBuilder
-
+ StringBuilder(0.024)  String(0.028)
  Валидатор пройден.
  */
 
 public class Q2417 {
 
     public static void main(String[] args) {
-        int []arr = new int[] {3,5,20,8,7,3,100};
+        int[] arr = new int[] {3,5,20,8,7,3,100};
         int[] arr2 = new int[arr.length]; // в этом массиве храним отсортированные(нечётные) числа из массива arr
         String[] sArr = new String[arr.length * 2]; // этот массив будет хранить нечётные числа из массива arr2 и запятые, делаем его сразу избыточным
         int count = 0; // счетчик
